@@ -9,11 +9,9 @@ function Card({type}) {
             try {
                 const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/${type}`);
                 setPokemon(result.data);
-
             } catch (e) {
                 console.error("NOT FOUND");
             }
-
         }
 
         fetchData();
@@ -21,8 +19,6 @@ function Card({type}) {
     },);
     return (
         <div>
-
-
             {Object.keys(pokemon).length > 0 &&
                 <section>
                     <h4>{pokemon.name}</h4>
@@ -35,11 +31,8 @@ function Card({type}) {
                             return (<li key={pokemon.slot}>{ability.ability.name}</li>)
                         })}
                     </ul>
-
-
                 </section>
             }
-
         </div>
     );
 }

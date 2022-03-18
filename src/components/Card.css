@@ -6,13 +6,17 @@ ul {
 
 section {
     display: block;
-    margin: 10px;
-    padding: 1px;
+    margin: 2px;
+    padding: 5px;
     background-color: white;
+    alignment: center;
+
 }
 
 div {
     display: flex;
+    alignment: center;
+    flex-wrap: wrap;
+    margin: 5px;
     text-align: center;
-    alignment: inherit;
 }
