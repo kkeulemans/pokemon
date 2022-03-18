@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import './Card.css'
 
-function Card ({type}){
+function Card({type}) {
     const [pokemon, setPokemon] = useState([]);
     useEffect(() => {
         async function fetchData() {
@@ -18,7 +18,7 @@ function Card ({type}){
 
         fetchData();
 
-    }, );
+    },);
     return (
         <div>
 
@@ -31,10 +31,10 @@ function Card ({type}){
                     <p>Moves: {pokemon.moves.length}</p>
                     <p> Abilities:</p>
                     <ul>
-                        {pokemon.abilities.map((ability) =>{ return (<li key={pokemon.slot}>{ability.ability.name}</li>)})}
+                        {pokemon.abilities.map((ability) => {
+                            return (<li key={pokemon.slot}>{ability.ability.name}</li>)
+                        })}
                     </ul>
-
-
 
 
                 </section>
@@ -43,4 +43,5 @@ function Card ({type}){
         </div>
     );
 }
+
 export default Card;

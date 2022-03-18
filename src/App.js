@@ -27,7 +27,7 @@ function App() {
     return (
         <div>
 
-            { Object.keys(pokemons).length > 0 &&
+            {Object.keys(pokemons).length > 0 &&
                 pokemons.results.map((pokemon) => {
                     return <Card key={pokemon.name} type={pokemon.name}/>
                 })

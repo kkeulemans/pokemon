@@ -1,4 +1,4 @@
-ul{
+ul {
     list-style: none;
     margin: 80px;
     padding: 1px;
@@ -11,7 +11,7 @@ section {
     background-color: white;
 }
 
-div{
+div {
     display: flex;
     text-align: center;
     alignment: inherit;
